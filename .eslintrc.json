@@ -1,3 +1,58 @@
 {
-  "extends": ["next/core-web-vitals", "standard", "plugin:tailwindcss/recommended", "prettier"]
+  "extends": [
+    "next/core-web-vitals",
+    "standard",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+    //    "no-unused-vars": "warn",
+    //    "no-console": "warn",
+    //    "react/react-in-jsx-scope": "off",
+    //    "react/prop-types": "off",
+    //    "react/jsx-props-no-spreading": "off",
+    //    "react/jsx-filename-extension": [
+    //      1,
+    //      {
+    //        "extensions": [
+    //          ".js",
+    //          ".jsx"
+    //        ]
+    //      }
+    //    ],
+    //    "react/jsx-one-expression-per-line": "off",
+    //    "react/jsx-curly-newline": "off",
+    //    "react/jsx-fragments": "off",
+    //    "react/jsx-indent": "off",
+    //    "react/jsx-indent-props": "off",
+    //    "react/jsx-max-props-per-line": "off",
+    //    "react/jsx-closing-bracket-location": "off",
+    //    "react/jsx-closing-tag-location": "off",
+    //    "react/jsx-wrap-multilines": "off",
+    //    "react/jsx-curly-spacing": "off",
+    //    "react/jsx-equals-spacing": "off",
+    //    "react/jsx-tag-spacing": "off",
+    //    "react/jsx-first-prop-new-line": "off",
+    //    "react/jsx-props-no-multi-spaces": "off",
+    //    "react/jsx-space-before-closing": "off",
+    //    "react/jsx-closing-bracket-location": "off",
+    //    "react/jsx-closing-tag-location": "off",
+    //    "react/jsx-boolean-value": "off",
+    //    "react/jsx-no-useless-fragment": "off",
+    //    "react/jsx-no-undef": "off",
+    //    "react/jsx-no-duplicate-props": "off",
+    //    "react/jsx-no-target-blank": "off",
+    //    "react/jsx-no-comment-textnodes": "off",
+    //    "react/jsx-no-literals": "off",
+    //    "react/jsx-no-script-url": "off",
+    //    "react/jsx-no-constructed-context-values": "off",
+    //    "react/jsx-no-undef": "off",
+    //    "react/jsx-no-useless-fragment": "off",
+    //    "react/jsx-pascal-case": "off",
+    //    "react/jsx-uses-react": "off",
+    //    "react/jsx-uses-vars": "off",
+    //    "react/jsx-wrap-multilines": "off",
+    //    "react/jsx-sort-props": "off"
+  }
 }
