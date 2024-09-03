@@ -12,19 +12,18 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = useState("light");
 
-  const handleThemeChange = () => {
-    if (mode === "dark") {
-      setMode("light");
-      document.documentElement.classList.add("light");
+  const handleThemeChange = (newMode: string) => {
+    if (newMode === "dark") {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
     } else {
-      setMode("dark");
+      document.documentElement.classList.add("light");
       document.documentElement.classList.remove("dark");
     }
   };
 
   useEffect(() => {
-    handleThemeChange();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    handleThemeChange(mode);
   }, [mode]);
 
   return (
